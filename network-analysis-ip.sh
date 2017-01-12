@@ -232,11 +232,8 @@ trafficAndConnectionOverview(){
     cat /tmp/ss | grep -E "$regSS" | grep SYN-RECV | awk -F'[: ]+' '{sum[$(NF-2)]+=1}END{for (ip in sum){print ip,sum[ip]}}' | sort -k 2 -nr | head -n 10
 }
  
-main(){
-    
-        trafficAndConnectionOverview
+
+ trafficAndConnectionOverview
          
-}
  
-main
 
