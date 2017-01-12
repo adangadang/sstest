@@ -233,7 +233,7 @@ trafficAndConnectionOverview(){
 }
  
 main(){
-    while true; do
+    
         trafficAndConnectionOverview
          
 }
